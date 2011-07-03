@@ -94,11 +94,11 @@ class TSSEMWebSocketServer
           convert_entries(entries)
           send(ws, {"entries" => entries})
           
-          if !(query =~ /\A\#[a-z0-9_]+\z/)
-            send(ws, {"error" => "Auto update works only for hash tags."})
-            ws.close_connection_after_writing()
-            next
-          end
+          # if !(query =~ /\A\#[a-z0-9_]+\z/)
+          #   send(ws, {"error" => "Auto update works only for hash tags."})
+          #   ws.close_connection_after_writing()
+          #   next
+          # end
           if @stream_state == :connected && @query_to_wsocks.has_key?(query)
             register_web_socket(query, ws)
             dump_connections()

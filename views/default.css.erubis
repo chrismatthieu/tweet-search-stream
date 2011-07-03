@@ -1,10 +1,5 @@
-/*
-  Copyright: Hiroshi Ichikawa <http://gimite.net/en/>
-  License: New BSD License
-*/
-
 body {
-  font-size: 95%;
+  font-size: 125%;
 }
 
 h1 {

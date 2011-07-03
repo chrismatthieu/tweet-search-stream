@@ -27,6 +27,7 @@ GEM
       faraday (~> 0.5.4)
     hashie (1.0.0)
     http_accept_language (1.0.1)
+    json (1.5.3)
     moji (1.5)
     monkey-lib (0.5.4)
       backports
@@ -72,6 +73,7 @@ DEPENDENCIES
   em-websocket
   erubis
   http_accept_language
+  json
   moji
   oauth
   sinatra

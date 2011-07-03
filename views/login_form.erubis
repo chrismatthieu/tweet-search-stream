@@ -1,19 +1,15 @@
 <!DOCTYPE html>
-<!--
-  Copyright: Hiroshi Ichikawa <http://gimite.net/en/>
-  License: New BSD License
--->
 <html><head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <!-- For Android/iOS -->
   <meta name="viewport" content="width=device-width">
-  <title>Tweet Search Stream</title>
+  <title>Raply</title>
   <link href="/css/default.css" rel="stylesheet" type="text/css">
 </head><body>
   
   <div class="page">
   
-    <h1 class="single-column">Tweet Search Stream</h1>
+    <h1 class="single-column">Raply</h1>
     
     <div class="single-column">
       <p>
@@ -28,8 +24,7 @@
     </div>
     
     <div class="footer">
-      Created by <a href="http://gimite.net/en/" target="_blank">Gimite</a> /
-      <a href="http://github.com/gimite/tweet-search-stream" target="_blank">Source code</a>
+      copyright
     </div>
   
   </div>

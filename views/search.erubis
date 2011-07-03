@@ -1,9 +1,5 @@
 <%# coding: UTF-8 %>
 <!DOCTYPE html>
-<!--
-  Copyright: Hiroshi Ichikawa <http://gimite.net/en/>
-  License: New BSD License
--->
 <html><head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <!-- For Android/iOS -->
@@ -36,6 +32,8 @@
     
     function onLoad() {
       initialize();
+// supress left column
+onCloseLeftButtonClick();
     }
     
   </script>
@@ -58,7 +56,7 @@
         <% if @lang == "ja" %>
           English
         <% else %>
-          Japanese
+          <!-- Japanese -->
         <% end %>
       </a>
     </div>
@@ -152,8 +150,7 @@
         </div>
         <div id="buzz" class="buzz">Loading...</div>
         <div class="buzz-footer">
-          <div>Powered by <a href="http://buzztter.com/" target="_blank">buzztter</a></div>
-          <div>Icon by <a href="http://www.famfamfam.com/" target="_blank">famfamfam.com</a></div>
+          <div></div>
         </div>
       </div>
       
@@ -181,8 +178,7 @@
     </div>
     
     <div class="footer">
-      Created by <a href="http://gimite.net/en/" target="_blank">Gimite</a> /
-      <a href="http://github.com/gimite/tweet-search-stream" target="_blank">Source code</a>
+      copyright
     </div>
     
   </div>

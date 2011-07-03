@@ -193,10 +193,10 @@ class TSSWebServer < Sinatra::Base
       if params[:title]
         @head_title = @body_title = params[:title]
       elsif !@query.empty? && !index
-        @head_title = "%s - Tweet Search Stream" % @query
-        @body_title = "Tweet Search Stream"
+        @head_title = "%s - Raply" % @query
+        @body_title = "Raply"
       else
-        @head_title = @body_title = "Tweet Search Stream"
+        @head_title = @body_title = "Raply"
       end
       @logo_url = params[:logo]
       

@@ -33,7 +33,7 @@
     function onLoad() {
       initialize();
 // supress left column
-onCloseLeftButtonClick();
+// onCloseLeftButtonClick();
     }
     
   </script>

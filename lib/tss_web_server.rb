@@ -80,11 +80,12 @@ class TSSWebServer < Sinatra::Base
     end
     
     get("/ustream") do
+      # key=339100083E900F21974AE0A065A54BF2
       channel = params[:channel]
       info = JSON.load(
-        open("http://api.ustream.tv/json/channel/%s/getInfo" % CGI.escape(channel)){ |f| f.read() })
-      @channel_id = info["results"]["id"]
-      query = info["results"]["socialStream"]["hashtag"]
+        open("http://api.ustream.tv/json/channel/%s/getInfo?key=339100083E900F21974AE0A065A54BF2" % CGI.escape(channel)){ |f| f.read() })
+      @channel_id = info["results"]["id"] rescue "cnn"
+      query = info["results"]["socialStream"]["hashtag"] rescue "cnn"
       return search(query, :ustream, false)
     end
     
